@@ -1,20 +1,29 @@
 import React from "react";
 import hero from "../assets/hero.png";
+import {BsInstagram} from 'react-icons/bs';
+import {BsFacebook} from 'react-icons/bs';
+import {BsLinkedin} from 'react-icons/bs';
+import {BsTwitter} from 'react-icons/bs';
+import {BsGithub} from 'react-icons/bs';
+
 const Hero = () => {
   const social_media = [
-    "logo-instagram",
-    "logo-facebook",
-    "logo-linkedin",
-    "logo-twitter",
+   <BsInstagram/>, 
+    <BsFacebook/>,
+    <BsLinkedin/>,
+    <BsTwitter/>,
+    <BsGithub/>
   ];
   return (
     <section
       id="home"
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
-      <div className="flex-1 flex items-center justify-center h-full">
-        
-        <img src={hero} alt="" className="md:w-8/12  rounded-xl mb-5 md:mb-0" />
+      <div className="flex-1 flex items-center justify-center h-full ">
+        <div className="flex items-center justify-center w-11/12">
+        <img src={hero} alt="" className="md:w-8/12  rounded-xl mb-5 md:mb-0 " />
+
+          </div>
 
       </div>
       <div className="flex-1">
@@ -24,7 +33,7 @@ const Hero = () => {
               Hello!
               <br />
             </span>
-            My Name is <span>Ahmad Hassoun</span>
+           I'm <span>Ahmad Hassoun</span>
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
             Full-Stack Developer
@@ -36,7 +45,7 @@ const Hero = () => {
                 key={icon}
                 className="text-gray-600 hover:text-white cursor-pointer "
               >
-                <ion-icon name={icon}></ion-icon>
+                <ion-icon name={icon}>{icon}</ion-icon>
               </div>
             ))}
           </div>

@@ -6,7 +6,7 @@ import { BiCurrentLocation } from 'react-icons/bi';
 const Contact = () => {
 
   const contact_info = [
-    { icon:<MdOutlineEmail/> , text: "ahmadhss366@gmail.com.com" },
+    { icon:<MdOutlineEmail/> , text: "ahmadhss366@gmail.com" },
     {  icon:<BsWhatsapp/> ,text: "+96176178123" },
     { icon:<BiCurrentLocation/>, text: "demo location",
     },

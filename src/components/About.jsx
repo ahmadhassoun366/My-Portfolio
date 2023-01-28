@@ -4,8 +4,8 @@ import aboutImg from "../assets/about.png";
 const About = () => {
   const info = [
     { text: "Years experience", count: "04" },
-    { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "06" },
+    { text: "Completed Projects", count: "30" },
+    { text: "Companies Work", count: "1" },
   ];
   return (
     <section id="about" className="py-10 text-white">
