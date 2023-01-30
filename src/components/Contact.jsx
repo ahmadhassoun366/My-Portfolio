@@ -11,6 +11,7 @@ const Contact = () => {
     { icon:<BiCurrentLocation/>, text: "demo location",
     },
   ];
+
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">
@@ -23,11 +24,31 @@ const Contact = () => {
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <form className="flex flex-col flex-1 gap-5">
-            <input type="text" placeholder="Your Name" />
-            <input type="Email" placeholder="Your Email Address" />
-            <textarea placeholder="Your Message" rows={10}></textarea>
-            <button className="btn-primary w-fit">Send Message</button>
+          <form className="flex flex-col flex-1 gap-5"  
+                id="contactForm" 
+                name="sentMessage" 
+                noValidate="noValidate">
+
+            <input 
+                       placeholder="Your Name"  
+                        className="form-control"
+                        id="name"
+                        type="text"
+                        name="name" 
+                      />
+
+            <input type="Email" placeholder="Your Email Address"    
+                         className="form-control"
+                         name="email"                           
+                      />
+
+            <textarea placeholder="Your Message" rows={10} 
+                    id="message"
+                    type="text"
+                    name="message"
+                ></textarea>
+
+            <button className="btn-primary w-fit"    type="submit">Send Message</button>
           </form>
           <div className="flex flex-col  gap-7 ">
           

@@ -3,17 +3,18 @@ import hero from "../assets/hero.png";
 import {BsInstagram} from 'react-icons/bs';
 import {BsFacebook} from 'react-icons/bs';
 import {BsLinkedin} from 'react-icons/bs';
-import {BsTwitter} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 
 const Hero = () => {
+
   const social_media = [
-   <BsInstagram/>, 
-    <BsFacebook/>,
-    <BsLinkedin/>,
-    <BsTwitter/>,
-    <BsGithub/>
+    { icon:   <BsGithub/>, link: "https://github.com/ahmadhassoun366" },
+    { icon:  <BsFacebook/>, link: "https://www.facebook.com/profile.php?id=100008135252627" },
+    { icon:  <BsLinkedin/>, link: "https://www.linkedin.com/in/ahmad-hassoun-b325b4167/" },
+    { icon:  <BsInstagram/>, link: "https://www.instagram.com/ahmadhasoun_/" },
+  
   ];
+
   return (
     <section
       id="home"
@@ -40,12 +41,12 @@ const Hero = () => {
           </h4>
           <button className="btn-primary mt-8">Contact Me</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
+            {social_media?.map(({icon,link}) => (
               <div
                 key={icon}
                 className="text-gray-600 hover:text-white cursor-pointer "
               >
-                <ion-icon name={icon}>{icon}</ion-icon>
+               <a href={link}><ion-icon name={icon}>{icon}</ion-icon></a> 
               </div>
             ))}
           </div>

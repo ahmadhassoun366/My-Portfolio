@@ -1,31 +1,42 @@
 import React from "react";
 import { SiHtml5 } from 'react-icons/si';
 import { SiCss3 } from 'react-icons/si';
-import { FaNodeJs } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io';
 import { FaReact } from 'react-icons/fa';
+import { FaAngular } from 'react-icons/fa';
 
 const Skills = () => {
   const skills = [
     {
       icon: <SiHtml5/>,
       level: "Advance",
-      count: 86,
+      count: 100,
+      name: "HTML"
     },
     {
       icon: <SiCss3/>,
       level: "Expect",
-      count: 90,
+      count: 95,
+      name:"CSS"
     },
     {
-      icon:<FaNodeJs/>,
-      level: "Beginner",
-      count: 80,
+      icon:<IoLogoJavascript/>,
+      level: "Advance",
+      count: 90,
+      name:"JavaScript"
     },
     {
       icon: <FaReact/>,
       level: "Intermediate",
-      count: 80,
+      count: 75,
+      name:"React js"
     },
+    {
+      icon: <FaAngular/>,
+      level: "Beginner",
+      count: 50, 
+      name:"Angular"
+    }
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
@@ -35,7 +46,7 @@ const Skills = () => {
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
         <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
-          {skills?.map(({ count, icon,level}) => (
+          {skills?.map(({ count, icon,level,name}) => (
             <div
              
               className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
@@ -50,6 +61,7 @@ const Skills = () => {
                   <icon >{icon}</icon>
                 </div>
               </div>
+              <p className="text-2xl mt-3 font-bold">{name}</p>
               <p className="text-xl mt-3">{level}</p>
             </div>
           ))}
