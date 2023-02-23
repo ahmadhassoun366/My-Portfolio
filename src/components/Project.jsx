@@ -4,7 +4,7 @@ import project2 from "../assets/project-2.jpg";
 import project3 from "../assets/project-3.jpg";
 import project4 from "../assets/project-4.jpg";
 import {BsCodeSlash} from 'react-icons/bs';
-import { motion } from "framer-motion"
+import { motion} from "framer-motion"
 
 const Project = () => {
     const projects = [
@@ -56,19 +56,14 @@ const Project = () => {
           </p>
         </div>
         <motion.div className="flex flex-wrap -m-4"
-          initial = {{opacity:0 ,x:100}}
-          whileInView ={{opacity:2,x:0}}
-          transition = {{delay:0.7}}>
+      
+         >
           {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-4">
-              <motion.div 
-               initial = {{opacity:0 ,y:-100}}
-          whileInView ={{opacity:2,y:0}}
-          transition = {{delay:0.7}}
-          className="flex relative">
+              <div className="flex relative">
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
@@ -83,7 +78,7 @@ const Project = () => {
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
                 </div>
-              </motion.div>
+              </div>
             </a>
           ))}
         </motion.div>

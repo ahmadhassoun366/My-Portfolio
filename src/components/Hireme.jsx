@@ -1,5 +1,5 @@
 import React from "react";
-import hireMe from "../assets/hireme.png";
+import hireMe from "../assets/new.png";
 import { motion } from "framer-motion"
 
 
@@ -31,7 +31,7 @@ const Hireme = () => {
           <motion.p initial = {{opacity:0 ,x:-100}}
            whileInView ={{opacity:2,x:0}}
            transition = {{delay:0.7}}
-           className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
+           className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6 w-9/12 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta
             soluta quos tempore eos accusamus cupiditate, amet in similique
             sapiente obcaecati odio deleniti architecto corporis ratione.
@@ -46,7 +46,7 @@ const Hireme = () => {
 
           src={hireMe}
           alt=""
-          className="lg:h-[32rem] h-80 lg:absolute bottom-0 -right-3 object-cover md:w-8/12	 w-11/12	"
+          className="lg:h-[32rem] h-80 lg:absolute bottom-0 -right-3 object-cover md:w-2/4	 w-3/4	"
         />
       </div>
     </section>

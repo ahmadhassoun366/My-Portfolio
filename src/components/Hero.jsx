@@ -22,24 +22,26 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
-      <div className="flex-1 flex items-center justify-center h-full "  >
-        <div className="flex items-center justify-center w-11/12">
-        <img src={hero} alt="" className="md:w-8/12  rounded-xl mb-5 md:mb-0 " />
-
+     <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
+          <div className="lg:w-96 h-full relative sm:w-10/12 w-3/4 max-w-sm aboutImg ">
+            <img
+              src={hero}
+              alt=""
+              className="w-full object-cover bg-cyan-600 rounded-xl"
+            />
           </div>
-
-      </div>
+        </div>
       <div className="flex-1"  >
         <div className="md:text-left text-center">
-          <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
+          <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold mt-10">
             <span className="text-cyan-600 md:text-6xl text-5xl">
-              Hello!
+              Hello 👋!
               <br />
             </span>
             <h1>
             <Typewriter
                   options={{
-                    strings: ["It's Ahmad Hassoun" , 'Front-End Developer' ,"Back-End Developer"," Full-Stack Developer"],
+                    strings: ["It's Ahmad Hassoun" , 'Front-End Developer' ,"Back-End Developer"," MERN-Stack Developer"],
                     autoStart: true,
                     loop: true,
                   }}
@@ -49,7 +51,8 @@ const Hero = () => {
           
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
-A Code Wizard          </h4>
+              A Code Wizard      
+         </h4>
           <button className="btn-primary mt-8">Contact Me</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map(({icon,link}) => (
