@@ -20,9 +20,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex py-10 md:flex-row flex-col items-center"
+      className="min-h-screen flex py-10 md:flex-row flex-col items-center justify-center"
     >
-     <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
+     <div className="flex-1 md:mt-0 mt-6 md:ml-24 flex justify-center items-center">
           <div className="lg:w-96 h-full relative sm:w-10/12 w-3/4 max-w-sm aboutImg ">
             <img
               src={hero}
