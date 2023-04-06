@@ -18,6 +18,10 @@ const Contact = () => {
     { icon: <BsWhatsapp />, text: '+96176178123' },
     { icon: <BiCurrentLocation />, text: 'Tripoli,Lebanon' },
   ];
+  const validateEmail = (email) => {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  };
 
   const handleOnChange = (event) => {
     const {
@@ -39,6 +43,10 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (!validateEmail(email.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
     await addDoc(collection(db, 'contactdata'), {
       ...email
     }).then(() => {
