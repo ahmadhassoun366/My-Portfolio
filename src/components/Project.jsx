@@ -1,43 +1,63 @@
 import React from "react";
-import project1 from "../assets/project-1.png";
-import project2 from "../assets/project-2.jpg";
-import project3 from "../assets/project-3.jpg";
-import project4 from "../assets/project-4.jpg";
+import store from "../assets/store.png";
+import Hydra from "../assets/hydra.png";
+import recruit from "../assets/recruit.jpg";
+import Travel from "../assets/Travel.jpg";
+import Tech from "../assets/Tech.png";
+import Nexus from "../assets/nexus.png";
 import {BsCodeSlash} from 'react-icons/bs';
 import { motion} from "framer-motion"
 
 const Project = () => {
     const projects = [
         {
-          title: "React Reserve",
+          title: "RecruitWorld",
+          subtitle: "Vuejs and Laravel",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+            image: recruit,
+          link: "https://github.com/ahmadhassoun366/CV-Analysis-WebApp",
+        },
+        {
+          title: "TravelWorld",
           subtitle: "MERN Stack",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-            image: project1,
-          link: "https://reactbootcamp.com",
+            image: Travel,
+          link: "https://github.com/ahmadhassoun366/Tour-Management",
         },
         {
-          title: "React Tracks",
-          subtitle: "React and Python",
+          title: "TechBazaar",
+          subtitle: "React and Django",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-            image: project2,
-          link: "https://reedbarger.com",
+            image: Tech,
+          link: "https://github.com/ahmadhassoun366/TechBazaar",
         },
         {
-          title: "DevChat",
+          title: "JobNexus AI",
+          subtitle: "React and Django",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+            image: Nexus,
+          link: "https://github.com/ahmadhassoun366/JobNexusAi",
+        },
+
+        {
+          title: "Harvest Shop",
+          subtitle: "React and Django",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+            image: store,
+          link: "https://github.com/ahmadhassoun366/Harvest-Shop",
+        },
+
+        {
+          title: "Hydra Tech",
           subtitle: "React and Firebase",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-            image: project3,
-          link: "https://jsbootcamp.com",
-        },
-        {
-          title: "Epic Todo App",
-          subtitle: "React Hooks",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-            image: project4,
+            image: Hydra,
           link: "https://pythonbootcamp.com",
         },
       ];
@@ -62,11 +82,11 @@ const Project = () => {
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-100 p-4">
+              className="sm:w-1/2 w-11/12 p-4">
               <div className="flex relative">
                 <img
                   alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  className="absolute inset-0 w-full h-full  object-center"
                   src={project.image}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">

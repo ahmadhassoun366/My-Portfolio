@@ -1,22 +1,15 @@
 import React from "react";
-import { SiHtml5 } from 'react-icons/si';
 import { SiCss3 } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaReact } from 'react-icons/fa';
-import { FaAngular } from 'react-icons/fa';
+import { FaLaravel } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import { DiNodejsSmall } from 'react-icons/di';
-import { SiExpress } from 'react-icons/si';
+import { SiExpress,SiMongodb } from 'react-icons/si';
 
 
 const Skills = () => {
   const skills = [
-    {
-      icon: <SiHtml5/>,
-      level: "Expert",
-      count: 100,
-      name: "HTML 5"
-    },
     {
       icon: <SiCss3/>,
       level: "Expert",
@@ -36,15 +29,21 @@ const Skills = () => {
       name:"React Js"
     },
     {
-      icon: <FaAngular/>,
-      level: "Beginner",
-      count: 50, 
-      name:"Angular Js"
+      icon: <FaLaravel/>,
+      level: "Intermediate",
+      count: 75, 
+      name:"Laravel"
+    },
+    {
+      icon: <SiMongodb/>,
+      level: "Intermediate",
+      count: 50,
+      name: "MongoDB"
     },
     {
       icon: <SiTailwindcss/>,
       level: "Expert",
-      count: 50, 
+      count: 100, 
       name:"Tailwind"
     },
     {

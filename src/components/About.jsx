@@ -36,7 +36,7 @@ const About = () => {
             </div>
             <br />
             <br />
-            <a href="https://www.canva.com/design/DAFRj8wGYTQ/view" >
+            <a href="https://drive.google.com/file/d/1QBOjpbBbRJuAOooc8a7dkA32tZ7C8CO_/view?usp=sharing" >
               <button className="btn-primary">Download CV</button>
             </a>
           </div>
