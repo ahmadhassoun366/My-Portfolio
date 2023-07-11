@@ -9,7 +9,7 @@ const Bot = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [inputText, setInputText] = useState("");
   const [conversation, setConversation] = useState([
-    { message: "Hi there! How can I help you?", sender: "bot" }
+    { message: "Hi there! How can I help you today?", sender: "bot" }
   ]);
 
   const handleBotClick = () => {
